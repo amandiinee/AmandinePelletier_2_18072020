@@ -34,6 +34,13 @@
         }
         body{
             font-family: 'Raleway', sans-serif;
+            font-size: 1em;
+        }
+        h3{
+            font-size: 1em;
+        }
+        h1{
+            font-size: 1.6em;
         }
         a {
             text-decoration: none;
@@ -61,6 +68,9 @@
         nav ul li a:hover{
             border-bottom-color: #0065fc;
             color: #0065fc;
+        }
+        .page{
+            padding:10px;
         }
         .inscription {
             display: block;
@@ -145,103 +155,52 @@
                 margin-top:10px;
             }
         
-        /* .filtres {
+    
+        .filtres {
             display: flex;
+            flex-direction: column;           
+            margin-top: 50px;
+            margin-bottom: 4px; 
+            
+        }
+        .filtres h3 { 
+            height: 50px;
+            padding-right: 30px;  
+            font-weight: bold;
+            border: solid 1px red;
+            display:flex;
             align-items: center;
-            margin-top: 50px;
-            margin-bottom: 4px; 
-        } */
-        /* .filtres h3 {
-        margin-left: 20px;
-        margin-bottom: 10px;
-        } */
-        /* .filtreTexteIcone { 
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-bottom:15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        } */
+        }
+        .filtre{ 
+            border: 2px solid #f2f2f2;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 20px;
+            margin-bottom:15px;
+            padding-right: 25px;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            cursor:pointer;
+        }
+        .filtre:hover {
+            color: #0065fc;
+            background-color: #deebff;
+            border-color: #deebff;
+        }
+        .filtre i{
+            height:50px;
+            width:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            margin-right: 10px;
+            background-color: #deebff;
+            color:#0065fc;       
+         }
 
-        /* .filtreTexteIcone:hover > .filtreTexte {
-        color: #0065fc;
-        }
-        .filtreTexteIcone:hover > .filtreIcone {
-        color: white;
-        background-color: #0065fc;
-        } */
-      
-
-        /* .filtreIcone {
-        margin-left: -2px;
-        border-radius: 25px;
-        width: 52px;
-        height: 52px;
-        color: #0065fc;
-        background-color: #deebff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        } */
-        /* .flexSpaceAround {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        } */
-        .filtreTexte { /*flex*/
-        /* height: 50px; */
-        padding-left: 20px;
-        padding-right: 20px;
-        border-radius: 0 25px 25px 0;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        .filtress i{
-        margin-left: -2px;
-        border-radius: 25px;
-        width: 52px;
-        height: 52px;
-        color: #0065fc;
-        background-color: #deebff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        .filtress h3 { /*flex*/
-        height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-        /* border-radius: 0 25px 25px 0; */
-        font-weight: bold;
-        display: flex;
-        
-        /* justify-content: flex-start; */
-        align-items: center;
-        }
-        .filtress {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            margin-bottom: 4px; 
-        }
-        .bordurefiltre{ /*flex*/
-        border: 2px solid #f2f2f2;
-        height: 50px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-bottom:15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-        .bordurefiltre:hover > .filtreTexte {
-        color: #0065fc;
-        }
         /*soucis hover i*/
         /* .bordurefiltre:hover > .filtress i {  
         color: white;
@@ -282,13 +241,16 @@
         justify-content: center;
         align-items: center;
         }
+        /* .test{
 
+        } */
         /* Mise en page pour les tablettes (à partir de 800px) 
         Principe du mobile first */
         @media screen and (min-width: 800px) {
             .page {
                 width: 800px;
                 margin: 0 auto;
+                padding:0;
             }
             header {
                 display: flex;
@@ -323,7 +285,7 @@
                 flex-grow: 1;
                 padding-top: 50px;
             }
-
+            
         }
 
         /* Mise en page pour les écrans (à partir de 1200px) 
@@ -332,7 +294,12 @@
             .page {
                 width: 1200px;
             }
-           
+            .filtres {
+                flex-direction: row;
+            }
+            .filtre{
+                margin-bottom: 0px;
+            }
         }   
         
     </style>
@@ -379,12 +346,15 @@
         </section>
               
         
-        <section class="filtress bordure">
+        <section class="filtres bordure">
             <h3>Filtres</h3>
-            <div class="bordurefiltre"><i class="fas fa-money-bill-wave fa-lg"></i><div class="filtreTexte">Économique</div></div>   
-            <div class="bordurefiltre"><i class="fas fa-child fa-lg"></i><div class="filtreTexte">Familial</div></div>
-            <div class="bordurefiltre"><i class="fas fa-heart fa-lg"></i><div class="filtreTexte">Romantique</div></div>
-            <div class="bordurefiltre"><i class="fas fa-dog fa-lg"></i><div class="filtreTexte">Animaux autorisés</div></div>
+            <div>
+               
+            <div class="filtre"><i class="fas fa-money-bill-wave fa-lg"></i><div class="">Économique</div></div>   
+            <div class="filtre"><i class="fas fa-child fa-lg"></i>Familial</div>
+            <div class="filtre"><i class="fas fa-heart fa-lg"></i>Romantique</div>
+            <div class="filtre"><i class="fas fa-dog fa-lg"></i>Animaux autorisés</div>
+            </div>
         </section>
         <!-- <div class="Column filtres">
             <h3>Filtres</h3>
@@ -417,8 +387,8 @@
        <div class="info">
             <div class="icone"><i class="fas fa-info fa-xs"></i></div>         
             <p>Plus de 500 logements disponibles dans cette ville</p>
-       </div>   
-   
+       </div>
+       
     </div>    
 </body>
 </html>    
