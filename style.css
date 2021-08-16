@@ -11,10 +11,8 @@
         /* force le navigateur à inclure les paddings et borders dans la dimension des boîtes */
         box-sizing: border-box;
     }
-    /* classe utilitaire pour visualiser les éléments */
-    .bordure {
-        border: solid 1px red;
-    }
+    
+   
     body{
         font-family: 'Raleway', sans-serif;
         font-size: 1em;
@@ -29,17 +27,15 @@
         text-decoration: none;
         color:black;
     }
-    /* ----------------- Mise en page pour les smartphones !!!
+    /* ----------------- Mise en page pour les smartphones 
     Principe du mobile first ------------------------------*/
     nav ul {
-        /* Pour gérer les 2 éléments du menu */
         display: flex;
         /* Suppression des puces */
         list-style-type: none;
         margin-top: 10px;
     }
     nav ul li {
-        /* Dans la maquette mobile, les 2 éléments du menu se répartissent équitablement la largeur */
         width: 50%;
     }
     nav ul li a{
@@ -65,12 +61,7 @@
     .logo{
         padding-top:30px;
     }
-
     .rechercher {
-       
-        /* width: 400px;
-        border-radius: 10px;
-        border: 0.5px solid #f2f2f2; */
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -83,8 +74,8 @@
         justify-content: center;
         align-items: center;
         background-color: #f2f2f2;
-        }
-        .rechercher input {
+    }
+    .rechercher input {
         height: 50px;
         width: 230px;
         font-family:'Raleway', sans-serif;
@@ -94,9 +85,9 @@
         padding-left: 20px;
         border-top: solid 1px #f2f2f2; 
         border-bottom: solid 1px #f2f2f2; 
-        }    
+    }    
         /*en smartphone logo recherche a la place de rechercher */ 
-        .buttonSearch {
+    .buttonSearch {
         height: 50px;
         width: 120px;
         color: white;
@@ -106,22 +97,20 @@
         justify-content: center;
         align-items: center;
         background-color: #0065fc;
-        
-        }
-        .buttonSearch:hover {
+    }
+    .buttonSearch:hover {
         color: #0065fc;
         background-color: #f2f2f2;
         font-weight: bold;
-        }
-        .titre p{
-            margin-top:10px;
-        }
+    }
+    .titre p{
+        margin-top:10px;
+    }
     .filtres {
         display: flex;
         flex-direction: column;           
         margin-top: 50px;
         margin-bottom: 4px; 
-        
     }
     .filtres h3 { 
         height: 50px;
@@ -213,7 +202,6 @@
         height: 160px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
-
     }
     .hebergement figcaption {
         display:flex;
@@ -234,7 +222,6 @@
         cursor: pointer;
         transform: scale(1.05);
     }
-
     .populaires {
         display:flex;
         width: 100%;
@@ -258,17 +245,15 @@
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);  
     }   
     .populaire img {
-    width: 40%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 15px 0 0 15px;
+        width: 40%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
     }
-
     .populaire:hover {
         cursor: pointer;
         transform: scale(1.05);
     }
-
     .grille {
         display: flex;
         flex-wrap: wrap;
@@ -289,19 +274,13 @@
         flex-direction: column; 
         padding: 0 20px;
     }
-  
- 
     .activitez:hover {
         cursor: pointer;
         transform: scale(1.05);
     }
-    
-   
     .grillez{
         display: flex;
         flex-direction: column;
-        
-
     }
     .columnz{
         width: 100%;
@@ -311,9 +290,7 @@
         border-radius: 30px;
         margin-bottom: 10px;
         margin-top: 10px;
-        transition-duration: 200ms;
-        
-        
+        transition-duration: 200ms;  
     }
     .activitez  img{
         height: 30vw;
@@ -326,7 +303,6 @@
         display:flex;
         align-items: center;
         padding:0 20px;
-
     }
     .activites{
         width:100%;
@@ -334,22 +310,18 @@
     .activitez3, .activitez6{
         margin-top: 20px;
     }
-
     /* footer */
     .Footer {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
-    background-color: #f2f2f2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #f2f2f2;
     }
     footer h3{
         margin-bottom: 8%;
-        
     }
-        
     .blocfooter{
         display: flex;
         justify-content: space-between;
@@ -364,13 +336,11 @@
         color: black;
         text-decoration: none;
         padding-bottom: 5%;
-        
     }
     .Footer ul {
         list-style-type: none;
         flex-wrap: wrap;
     }
-
     /* Mise en page pour les tablettes (à partir de 800px) 
     Principe du mobile first */
     @media screen and (min-width: 800px) {
@@ -394,7 +364,6 @@
             border-bottom: none;
             border-top: 2px solid transparent;
         }
-        
         nav ul li a:hover{
             
             border-top-color: #0065fc;
@@ -405,22 +374,16 @@
             order: 3;
             padding-top:52px;
         }
-
-        
         .logo {
             flex-grow: 1;
             padding-top: 50px;
         }
-
         .hebergements {           
             width: 100%;
-
         }
-
         .populaires {
             width: 100%;
         }
-
         .hebergement {
             width: 49%; 
         }
@@ -430,15 +393,12 @@
         .conteneur {
             flex-direction: row;
         }
-
         .activite {
             width: 49%; 
         }
         .grillez{
-        
         flex-direction: row ;
         justify-content: space-between;
-        
         }
         .columnz{
             width: 23%;
@@ -448,15 +408,12 @@
         }
         .activitez1 img, .activitez4 img{
             height: 390px;
-        
         }
         .activitez2 img{
             height: 180px;
-        
         }
         .activitez3 img{
             height: 110px;
-        
         }
         .activitez5 img{
             height:140px;
@@ -464,11 +421,8 @@
         .activitez6 img{
             height:150px;
         }
-
         .Footer{
             flex-direction: row;
-            
-            
         }
         .blocfooter{
             align-items: flex-start;
@@ -493,14 +447,11 @@
             width: 68%;
             background-color: #f2f2f2;
             border-radius: 15px;
-
         }
-
         .populaires {
             width: 29%;
             border-radius: 15px;
         }
-
         .hebergement {
             width: 31%;
         }
@@ -509,28 +460,20 @@
         }
         .conteneur {
             flex-direction: row;
-
         }
         .populaire {
             width: 100%;
         }
         .activite {
-            width: 23%;
-            
+            width: 23%;           
         }
-        .grillez{
-        
+        .grillez{       
         flex-direction: row ;
-        justify-content: space-between;
-        
+        justify-content: space-between;       
         }
         .Footer{
             flex-direction: row;
-            justify-content: space-between;
-            
-           
-            
-            
+            justify-content: space-between;           
         }
         .blocfooter{
             align-items:flex-start;
