@@ -26,17 +26,13 @@
         text-decoration: none;
         color:black;
     }
-    /* ----------------- Mise en page pour les smartphones !!!
-    Principe du mobile first ------------------------------*/
+    
     nav ul {
-        /* Pour gérer les 2 éléments du menu */
         display: flex;
-        /* Suppression des puces */
         list-style-type: none;
         margin-top: 10px;
     }
     nav ul li {
-        /* Dans la maquette mobile, les 2 éléments du menu se répartissent équitablement la largeur */
         width: 50%;
     }
     nav ul li a {
@@ -86,6 +82,9 @@
         align-items: center;
         background-color: #0065fc;
     }
+    .iconetelz {
+        display:none;
+    }
     .rechercher input {
         height: 50px;
         width: 230px;
@@ -97,19 +96,6 @@
         border-top: solid 1px #f2f2f2; 
         border-bottom: solid 1px #f2f2f2; 
     }            
-        
-    /* .buttonSearch {
-        height: 50px;
-        width: 120px;
-        color: white;
-        cursor: pointer;
-        border-radius: 0 10px 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #0065fc;
-        
-    } */
     .iconetel:hover {
         color: #0065fc;
         background-color: #f2f2f2;
@@ -122,8 +108,7 @@
         display: flex;
         flex-direction: column;           
         margin-top: 50px;
-        margin-bottom: 4px; 
-        
+        margin-bottom: 4px;         
     }
     .filtres h3 { 
         height: 50px;
@@ -176,6 +161,7 @@
         justify-content: center;
         align-items: center;       
     }
+    
     @media screen and (min-width: 800px) {
         .page {
             width: 800px;
@@ -188,7 +174,7 @@
         nav ul{
             margin-top: 0;
         }
-        /* Largeur des éléments de menu selon la maquette, mesuré sous Photoshop */
+        
         nav ul li {
             width: 162px;
         }
@@ -196,30 +182,22 @@
             padding: 50px 0 0 0;
             border-bottom: none;
             border-top: 2px solid transparent;
-        }
-        
+        }  
         nav ul li a:hover{
-            /* border-top:2px solid #0065fc; */
+            
             border-top-color: #0065fc;
             border-bottom: none;
         }
-        /* Le lien inscription passe à droite dans flex */
         .inscription {
             order: 3;
             padding-top:52px;
         }
-
-        /* Permet d'affecter tout l'espace restant au logo, ce qui va repousser le menu à droite
-        Cette propriété est à étudier et à comprendre en détail, c'est elle qui donne la solution au problème */
         .logo {
             flex-grow: 1;
             padding-top: 50px;
         }
         
-    }
-
-    /* Mise en page pour les écrans (à partir de 1200px) 
-    Principe du mobile first */       
+    }     
     @media screen and (min-width: 1200px) {
         .page {
             width: 1200px;
@@ -230,11 +208,13 @@
         .filtre{
             margin-bottom: 0px;
         }
-        
-        .iconetel {
+        .iconetel{
+            display: none;
+        }
+        .iconetelz {
         height: 50px;
         width: 120px;
-        
+        color: #f2f2f2;
         cursor: pointer;
         border-radius: 0 10px 10px 0;
         display: flex;
