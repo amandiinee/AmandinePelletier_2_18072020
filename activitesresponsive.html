@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Google font Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" /> 
+    
+    <!-- Fontawesome icones -->
+    <link rel="preconnect" href="https://fonts.awesome.com" /> 
+    <script src="https://kit.fontawesome.com/9919d0fa00.js" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+        .bordure {
+            border: solid 1px red;
+        }
+        body{
+            font-family: 'Raleway', sans-serif;
+        }
+        p{
+            margin:5px 0;
+        }
+        .bleu{
+            color: #0065fc;
+        }
+        .grisclair{
+            color: #d9d9d9;
+        }
+      
+        .conteneur {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column; 
+            padding: 0 20px;
+        }
+      
+     
+        .activitez:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        
+       
+        .grillez{
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+        .columnz{
+            width: 100%;
+        }
+        .activitez{
+            background: white;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            transition-duration: 200ms;
+            
+            
+        }
+        .activitez  img{
+            height: 30vw;
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+            object-fit: cover;
+        }
+        .activitez figcaption{
+            height: 56px;
+            display:flex;
+            align-items: center;
+            padding:0 20px;
+
+        }
+        .activites{
+            width:100%;
+        }
+        .activitez3, .activitez6{
+            margin-top: 20px;
+        }
+        /* Mise en page pour les tablettes (à partir de 800px) 
+        Principe du mobile first */
+        @media screen and (min-width: 800px) {
+            .page {
+                width: 800px;
+                margin: 0 auto;
+            }
+            .conteneur {
+                flex-direction: row;
+            }
+    
+            .activite {
+                width: 49%; 
+            }
+            .grillez{
+            
+            flex-direction: row ;
+            justify-content: space-between;
+            
+        }
+        .columnz{
+            width: 23%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .activitez1 img, .activitez4 img{
+            height: 390px;
+          
+        }
+        .activitez2 img{
+            height: 180px;
+          
+        }
+        .activitez3 img{
+            height: 110px;
+          
+        }
+        .activitez5 img{
+            height:140px;
+        }
+        .activitez6 img{
+            height:150px;
+        }
+            
+        }
+
+        /* Mise en page pour les écrans (à partir de 1200px) 
+        Principe du mobile first */       
+        @media screen and (min-width: 1200px) {
+            .page {
+                width: 1200px;
+            }
+        
+
+            .activite {
+                width: 23%;
+                
+            }
+            .grillez{
+            
+            flex-direction: row ;
+            justify-content: space-between;
+            
+            }
+      
+        }   
+        
+    </style>
+
+<div class="conteneur page bordure">
+    <section class="activites bordure">
+        <h2 class="bordure">Activités à Marseille</h2>
+        <div class="grillez bordure">
+             <div class="bordure columnz activitez activitez1">
+                 <figure>
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port" />
+                        <figcaption>
+                            <h3>Vieux Port</h3>
+                        </figcaption>
+                 </figure>
+             </div>
+             <div class="bordure columnz">
+                 <div class="bordure activitez activitez2">
+                    <figure>
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues" />
+                        <figcaption>
+                            <h3>Fort de Pomègues</h3>
+                        </figcaption> 
+                    </figure>  
+                </div>
+                 <div class="bordure activitez activitez3">
+                    <figure>
+                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo des Iles du Frioul" />
+                        <figcaption>
+                            <h3>Iles du Frioul</h3>
+                        </figcaption>
+                    </figure>  </div>
+                </div>
+             <div class="bordure columnz activitez activitez4">
+                <figure>
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc national des Calanques" />
+                    <figcaption>
+                        <h3>Parc national des Calanques</h3>
+                    </figcaption>   
+                  </figure>    
+             </div>
+             <div class="bordure columnz">
+                <div class="bordure activitez activitez5">
+                    <figure>
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde" />
+                        <figcaption>
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </figcaption>
+                      </figure>    
+                </div>
+                <div class="bordure activitez activitez6"><figure>
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du Parc Longchamp" />
+                    <figcaption>
+                        <h3>Parc Longchamp</h3>
+                    </figcaption>   
+                  </figure>  
+                </div>
+             </div>
+        </div>
+    </section>
+
+
+        
+    
+</div>
