@@ -85,14 +85,12 @@
 
         .rechercher {
            
-            /* width: 400px;
-            border-radius: 10px;
-            border: 0.5px solid #f2f2f2; */
+            
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }     
-        .rechercher i{
+        .map {
             height: 50px;
             width: 50px;
             border-radius: 10px 0 0 10px;
@@ -100,8 +98,18 @@
             justify-content: center;
             align-items: center;
             background-color: #f2f2f2;
-            }
-            .rechercher input {
+        }
+        .iconetel {
+            height: 50px;
+            width: 50px;
+            color:#f2f2f2;
+            border-radius: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0065fc;
+        }
+        .rechercher input {
             height: 50px;
             width: 230px;
             font-family:'Raleway', sans-serif;
@@ -111,9 +119,9 @@
             padding-left: 20px;
             border-top: solid 1px #f2f2f2; 
             border-bottom: solid 1px #f2f2f2; 
-            }            
+        }            
             /*en smartphone logo recherche a la place de rechercher */ 
-            .buttonSearch {
+        .buttonSearch {
             height: 50px;
             width: 120px;
             color: white;
@@ -124,17 +132,15 @@
             align-items: center;
             background-color: #0065fc;
             
-            }
-            .buttonSearch:hover {
+        }
+        .buttonSearch:hover {
             color: #0065fc;
             background-color: #f2f2f2;
             font-weight: bold;
-            }
-            .titre p{
+        }
+        .titre p {
                 margin-top:10px;
-            }
-        
-    
+        }
         .filtres {
             display: flex;
             flex-direction: column;           
@@ -178,8 +184,7 @@
             margin-right: 10px;
             background-color: #deebff;
             color:#0065fc;       
-         }
-       
+         }      
         .info {
         display: flex;
         align-items: center;
@@ -193,10 +198,8 @@
             margin-right: 5px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            
+            align-items: center;       
         }
-
         @media screen and (min-width: 800px) {
             .page {
                 width: 800px;
@@ -251,6 +254,19 @@
             .filtre{
                 margin-bottom: 0px;
             }
+            
+            .iconetel {
+            height: 50px;
+            width: 120px;
+            
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0065fc;
+            
+            }
         }   
         
     </style>
@@ -291,11 +307,9 @@
         <!--Section 1 Recherche-->
         <!--Barre de recherche--> 
         <section class="rechercher bordure">
-            <i class="fas fa-map-marker-alt"></i> 
-            <input type="search" value="Marseille, France"/>
-            
-            <div class="buttonSearch">Rechercher</div>
-            <!-- <i class="fas fa-search"></i> -->
+            <i class="map fas fa-map-marker-alt"></i> 
+            <input type="search" value="Marseille, France"/>        
+            <i class="iconetel fas fa-search"></i>
         </section>
               
         

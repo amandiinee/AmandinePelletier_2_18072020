@@ -1,0 +1,246 @@
+
+    /* Couleurs
+    Gris clair : #f2f2f2;
+    Bleu #0065fc
+     */
+    /* "reset", pour réinitialiser les marges, paddings, borders */
+    * {
+        padding: 0;
+        margin: 0;
+        border: none;
+        /* force le navigateur à inclure les paddings et borders dans la dimension des boîtes */
+        box-sizing: border-box;
+    }
+   
+    body {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    a {
+        text-decoration: none;
+        color:black;
+    }
+    /* ----------------- Mise en page pour les smartphones !!!
+    Principe du mobile first ------------------------------*/
+    nav ul {
+        /* Pour gérer les 2 éléments du menu */
+        display: flex;
+        /* Suppression des puces */
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    nav ul li {
+        /* Dans la maquette mobile, les 2 éléments du menu se répartissent équitablement la largeur */
+        width: 50%;
+    }
+    nav ul li a {
+        display:block;
+        text-align:center;
+        padding:0 0 15px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    nav ul li a:hover {
+        border-bottom-color: #0065fc;
+        color: #0065fc;
+    }
+    .page{
+        padding:10px;
+    }
+    .inscription {
+        display: block;
+        float: right;
+        padding-top:44px;
+        color: #0065fc;
+        font-weight:bold;
+    }
+    .logo{
+        padding-top:30px;
+    }
+    .rechercher {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }     
+    .map {
+        height: 50px;
+        width: 50px;
+        border-radius: 10px 0 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+    }
+    .iconetel {
+        height: 50px;
+        width: 50px;
+        color:#f2f2f2;
+        border-radius: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065fc;
+    }
+    .rechercher input {
+        height: 50px;
+        width: 230px;
+        font-family:'Raleway', sans-serif;
+        font-size: 17px;
+        color: black;
+        font-weight: bold;
+        padding-left: 20px;
+        border-top: solid 1px #f2f2f2; 
+        border-bottom: solid 1px #f2f2f2; 
+    }            
+        
+    /* .buttonSearch {
+        height: 50px;
+        width: 120px;
+        color: white;
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065fc;
+        
+    } */
+    .iconetel:hover {
+        color: #0065fc;
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    .titre p {
+            margin-top:10px;
+    }
+    .filtres {
+        display: flex;
+        flex-direction: column;           
+        margin-top: 50px;
+        margin-bottom: 4px; 
+        
+    }
+    .filtres h3 { 
+        height: 50px;
+        padding-right: 30px;  
+        font-weight: bold;
+        display:flex;
+        align-items: center;
+    }
+    .filtre{ 
+        border: 2px solid #f2f2f2;
+        height: 50px;
+        border-radius: 25px;
+        margin-right: 20px;
+        margin-bottom:15px;
+        padding-right: 25px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    .filtre:hover {
+        color: #0065fc;
+        background-color: #deebff;
+        border-color: #deebff;
+    }
+    .filtre i{
+        height:50px;
+        width:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin-right: 10px;
+        background-color: #deebff;
+        color:#0065fc;       
+     }      
+    .info {
+    display: flex;
+    align-items: center;
+    }
+    .info i {
+        color: #0065fc;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #f2f2f2;
+        border-radius: 100%;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+    @media screen and (min-width: 800px) {
+        .page {
+            width: 800px;
+            margin: 0 auto;
+            padding:0;
+        }
+        header {
+            display: flex;
+        }
+        nav ul{
+            margin-top: 0;
+        }
+        /* Largeur des éléments de menu selon la maquette, mesuré sous Photoshop */
+        nav ul li {
+            width: 162px;
+        }
+        nav ul li a{
+            padding: 50px 0 0 0;
+            border-bottom: none;
+            border-top: 2px solid transparent;
+        }
+        
+        nav ul li a:hover{
+            /* border-top:2px solid #0065fc; */
+            border-top-color: #0065fc;
+            border-bottom: none;
+        }
+        /* Le lien inscription passe à droite dans flex */
+        .inscription {
+            order: 3;
+            padding-top:52px;
+        }
+
+        /* Permet d'affecter tout l'espace restant au logo, ce qui va repousser le menu à droite
+        Cette propriété est à étudier et à comprendre en détail, c'est elle qui donne la solution au problème */
+        .logo {
+            flex-grow: 1;
+            padding-top: 50px;
+        }
+        
+    }
+
+    /* Mise en page pour les écrans (à partir de 1200px) 
+    Principe du mobile first */       
+    @media screen and (min-width: 1200px) {
+        .page {
+            width: 1200px;
+        }
+        .filtres {
+            flex-direction: row;
+        }
+        .filtre{
+            margin-bottom: 0px;
+        }
+        
+        .iconetel {
+        height: 50px;
+        width: 120px;
+        
+        cursor: pointer;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065fc;
+        
+        }
+    }   
