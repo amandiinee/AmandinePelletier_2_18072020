@@ -48,7 +48,7 @@
         color: #0065fc;
     }
     .page{
-        padding:10px;
+        padding:5px;
     }
     .inscription {
         display: block;
@@ -201,6 +201,7 @@
         margin-top: 20px;   
         flex-direction: column;
         justify-content: space-around;
+        
     }
     .hebergement{
         width: 100%;
@@ -296,9 +297,12 @@
     }
   
  
-    .activitez:hover {
+    .activite1:hover,.activite2:hover,.activite3:hover,.activite4:hover,.activite5:hover,.activite6:hover  {
         cursor: pointer;
         transform: scale(1.05);
+        transition-duration: 300ms;
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);    
     }
     
    
@@ -308,10 +312,11 @@
         
 
     }
-    .columnz{
+    .column{
         width: 100%;
     }
-    .activitez{
+    .activites{
+        width:100%;
         background: white;
         border-radius: 30px;
         margin-bottom: 10px;
@@ -320,24 +325,25 @@
         
         
     }
-    .activitez  img{
+    .activites  img{
         height: 30vw;
         width: 100%;
+        
         border-radius: 30px 30px 0 0;
         object-fit: cover;
     }
-    .activitez figcaption{
+    .activites figcaption{
         height: 56px;
         display:flex;
         align-items: center;
         padding:0 20px;
 
     }
-    .activites{
-        width:100%;
+    /* .activites{
+       
         margin-top: 2%;
-    }
-    .activitez3, .activitez6{
+    } */
+    .activite3, .activite6{
         margin-top: 20px;
     }
      /* footer */
@@ -353,6 +359,7 @@
         margin-bottom: 8%;
     }
     .blocfooter{
+        
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -433,28 +440,28 @@
         justify-content: space-between;
         
     }
-    .columnz{
+    .column{
         width: 23%;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .activitez1 img, .activitez4 img{
+    .activite1 img, .activite4 img{
         height: 390px;
       
     }
-    .activitez2 img{
+    .activite2 img{
         height: 180px;
       
     }
-    .activitez3 img{
+    .activite3 img{
         height: 110px;
       
     }
-    .activitez5 img{
+    .activite5 img{
         height:140px;
     }
-    .activitez6 img{
+    .activite6 img{
         height:150px;
     }
     .Footer{
