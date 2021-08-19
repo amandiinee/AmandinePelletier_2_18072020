@@ -21,8 +21,16 @@
     h3 {
         font-size: 1em;
     }
+    h2 {
+        font-size:1.3em;
+        margin: 15px 0 10px 0;
+    }
     h1 {
-        font-size: 1.6em;
+        margin-top: 40px;
+        font-size: 1.4em;
+    }
+    figcaption p{
+        margin:13px 0;
     }
     a {
         text-decoration: none;
@@ -59,8 +67,8 @@
     }
     .logo{
         
-        padding-top:30px;
-        padding-left: 1%;
+        padding-top:25px;
+        
     }
     /*.titre ?*/
 
@@ -69,7 +77,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-top: 5%;
+        margin-top: 20px;
     }     
     .map {
         height: 50px;
@@ -178,9 +186,11 @@
         justify-content: center;
         align-items: center;       
     }
+    
     /*Hebergements et populaire*/
-    p{
-        margin:15px 0;
+   
+    p.afficher-plus{
+        margin:13px 0;
     }
     .bleu{
         color: #0065fc;
@@ -295,8 +305,11 @@
         
         
     }
-  
- 
+    .activite1,.activite2,.activite3,.activite4,.activite5,.activite6  {
+        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);  
+    }
+        
     .activite1:hover,.activite2:hover,.activite3:hover,.activite4:hover,.activite5:hover,.activite6:hover  {
         cursor: pointer;
         transform: scale(1.05);
@@ -403,6 +416,9 @@
             
             border-top-color: #0065fc;
             border-bottom: none;
+        }
+        .info p{
+            margin: 20px 0;
         }
         .inscription {
             order: 3;
