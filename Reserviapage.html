@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservia</title>
+    <title>Document</title>
     
     <!-- Google font Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" /> 
@@ -20,7 +20,7 @@
     
 </head>
 
-<body>
+
     <!-- Bloc qui contient toute la page, pour limiter la largeur en prévision des écrans extrêmement larges -->
     <div class="page">
 
@@ -42,30 +42,28 @@
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>  
-            
+        
         </header>
-        <section class="Search">
-            <!-- Titre et sous-titre-->
-            <div class="titre">    
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-           
-            
-            <!--Section 1 Recherche-->
-            <!--Barre de recherche et icone, icone version mobile,  devient rechercher sur grand ecran--> 
-            <div class="recherche">  
-                <i class="map fas fa-map-marker-alt"></i> 
-                <input type="search" value="Marseille, France"/>        
-                <i class="iconetel fas fa-search"></i>
-                <div class="iconepc">Rechercher</div>
+
+        <!-- Titre et sous-titre-->
+        <div class="titre">    
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <!-- essayer de deplacer cette div dans le header -->
+        
+        <!--Section 1 Recherche-->
+        <!--Barre de recherche--> 
+        <section class="rechercher">
+            <i class="map fas fa-map-marker-alt"></i> 
+            <input type="search" value="Marseille, France"/>        
+            <i class="iconetel fas fa-search"></i>
+            <div class="iconetelz">Rechercher</div>
+        </section>
               
-            </div>
-        </section>    
         <!--Section 2 Filtres-->
         <section class="filtres">
             <h3>Filtres</h3>
-            <!--filtres et icones-->
             <div>
                 <div class="filtre"><i class="fas fa-money-bill-wave fa-lg"></i>Économique</div>   
                 <div class="filtre"><i class="fas fa-child fa-lg"></i>Familial</div>
@@ -74,22 +72,19 @@
             </div>
         </section>
       
-        <!-- Phrase d'info et icone-->
-        <div class="info">
-                <div class="icone"><i class="fas fa-info fa-xs"></i></div>         
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
+       <!-- Phrase d'info et icone-->
+       <div class="info">
+            <div class="icone"><i class="fas fa-info fa-xs"></i></div>         
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+       </div>
     </div>  
-       
-    <!--Conteneur section hebergements [mise en page flexbox]-->    
-    <div class="conteneur-hebergements page">
-        <!--Section Hebergements-->
-        <section class="hebergements">
-            <h2>Hébergements à Marseille</h2>
-            <div class="grille-hebergements-pop">
-                <!--Element hebergement 1-->
-                <div class="hebergement">
-                  <!--figure qui comprend l'image la légende ainsi que les icones etoiles/note-->
+</header>       
+<body>      
+    <div class="conteneur page bordure">
+        <section class="hebergements bordure">
+            <h2 class="bordure">Hébergements à Marseille</h2>
+            <div class="grille bordure">
+                <div class="hebergement bordure">
                   <figure>
                         <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge de la Cannebière" />
                             <figcaption>
@@ -105,8 +100,7 @@
                             </figcaption>
                     </figure>
                 </div>
-                <!--Element hebergement 2-->
-                <div class="hebergement">
+                <div class="hebergement bordure">
                   <figure>
                         <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo de l'Hôtel du port" />
                             <figcaption>
@@ -122,8 +116,7 @@
                             </figcaption>
                    </figure>     
                 </div>
-                <!--Element hebergement 3-->
-                <div class="hebergement">
+                <div class="hebergement bordure">
                   <figure>
                         <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo de l'Hôtel Les mouettes" />
                             <figcaption>
@@ -139,8 +132,7 @@
                             </figcaption>
                   </figure>
                 </div>
-                <!--Element hebergement 4-->
-                <div class="hebergement"> 
+                <div class="hebergement bordure"> 
                     <figure>
                         <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo de l'Hôtel de la mer" />
                             <figcaption>
@@ -156,8 +148,7 @@
                             </figcaption>
                     </figure>            
                 </div>
-                <!--Element hebergement 5-->
-                <div class="hebergement">   
+                <div class="hebergement bordure">   
                     <figure>
                         <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de l'Auberge Le Panier" />
                             <figcaption>
@@ -173,8 +164,7 @@
                             </figcaption>
                     </figure>            
                 </div>
-                <!--Element hebergement 6-->
-                <div class="hebergement">
+                <div class="hebergement bordure">
                     <figure>
                         <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo de l'Hôtel chez Amina" />
                             <figcaption>
@@ -191,21 +181,15 @@
                     </figure>        
                 </div>
             </div>
-
-           
+            <div class="bordure">
                 <p class="afficher-plus"><a href="#"><strong>Afficher plus</strong></a></p>
-            
-
+            </div>
         </section>
-
-        <!--Aside Populaires-->
-        <aside class="populaires">
-            <h2>Les plus populaires<i class="icone fas fa-chart-line"></i></h2>
+        <aside class="populaires bordure">
+            <h2 class="bordure">Les plus populaires<i class="icone bordure fas fa-chart-line"></i></h2>
     
-            <div class="grille-hebergements-pop">
-                <!--Element populaire 1-->
-                <div class="populaire">
-                    <!--figure contenant l'image, la légende (figcaption), la note (les icones)-->
+            <div class="grille bordure">
+                <div class="populaire bordure">
                     <figure>
                         <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de l'Hôtel Le soleil du matin" />
                         <figcaption>
@@ -221,8 +205,7 @@
                         </figcaption>    
                     </figure>        
                 </div>
-                <!--Element populaire 2-->
-                <div class="populaire">  
+                <div class="populaire bordure">  
                     <figure>
                         <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo de Chambres d'hôtes Au coeur de l'eau" />
                             <figcaption>
@@ -238,8 +221,7 @@
                             </figcaption>    
                     </figure>        
                 </div>
-                <!--Element populaire 3-->
-                <div class="populaire">  
+                <div class="populaire bordure">  
                     <figure>
                         <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de l'Hôtel Tout bleu et Blanc" />
                         <figcaption>
@@ -258,12 +240,12 @@
             </div>
         </aside>
     </div>
-    <!--Conteneur du bloc activites [mise en page flexbox] -->    
-    <div class="conteneuractivites page">
-        <section class="activites">
-            <h2>Activités à Marseille</h2>
-            <div class="grille-activites">
-                 <div class="column activites activite1">
+    
+    <div class="conteneura page bordure">
+        <section class="activites bordure">
+            <h2 class="bordure">Activités à Marseille</h2>
+            <div class="grillez bordure">
+                 <div class="bordure column activites activite1">
                      <figure>
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du Vieux Port" />
                             <figcaption>
@@ -271,8 +253,8 @@
                             </figcaption>
                      </figure>
                  </div>
-                 <div class="column">
-                     <div class="activites activite2">
+                 <div class="bordure column">
+                     <div class="bordure activites activite2">
                         <figure>
                             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues" />
                             <figcaption>
@@ -280,7 +262,7 @@
                             </figcaption> 
                         </figure>  
                     </div>
-                     <div class="activites activite3">
+                     <div class="bordure activites activite3">
                         <figure>
                             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo des Iles du Frioul" />
                             <figcaption>
@@ -288,7 +270,7 @@
                             </figcaption>
                         </figure>  </div>
                     </div>
-                 <div class="column activites activite4">
+                 <div class="bordure column activites activite4">
                     <figure>
                         <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc national des Calanques" />
                         <figcaption>
@@ -296,8 +278,8 @@
                         </figcaption>   
                       </figure>    
                  </div>
-                 <div class="column">
-                    <div class="activites activite5">
+                 <div class="bordure column">
+                    <div class="bordure activites activite5">
                         <figure>
                             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde" />
                             <figcaption>
@@ -305,7 +287,7 @@
                             </figcaption>
                           </figure>    
                     </div>
-                    <div class="activites activite6"><figure>
+                    <div class="bordure activites activite6"><figure>
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du Parc Longchamp" />
                         <figcaption>
                             <h3>Parc Longchamp</h3>
@@ -316,36 +298,34 @@
             </div>
         </section>       
     </div>
-        
-        <footer>
-            <section class="page">
-            
-                <div class="footer">
-                    <div class="blocfooter">       
-                        <h3>A propos</h3>
-                        <ul>
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales de vente</a></li>
-                            <li><a href="#">Données et confidentialité</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocfooter">       
-                        <h3>Nos hébergements</h3>
-                        <ul>
-                            <li><a href="#">Charte qualité</a></li>
-                            <li><a href="#">Soumettre votre hôtel</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocfooter">       
-                        <h3>Assistance</h3>
-                        <ul>
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>   
-
-        </footer>
-</body>        
+</body>
+<footer>
+    <section class="page">
+    
+        <div class="Footer">
+            <div class="blocfooter">       
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="blocfooter">       
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="blocfooter">       
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>   
+</footer>
 </html>    

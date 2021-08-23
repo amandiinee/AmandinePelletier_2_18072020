@@ -1,5 +1,4 @@
-
-    /* Couleurs
+  /* Couleurs
     Gris clair : #f2f2f2;
     Bleu #0065fc
      */
@@ -73,7 +72,7 @@
     /*.titre ?*/
 
     /*Section1*/
-    .rechercher {
+    .recherche {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -98,10 +97,10 @@
         align-items: center;
         background-color: #0065fc;
     }
-    .iconetelz {
+    .iconepc {
         display:none;
     }
-    .rechercher input {
+    .recherche input {
         height: 50px;
         width: 230px;
         font-family:'Raleway', sans-serif;
@@ -117,7 +116,7 @@
         background-color: #f2f2f2;
         font-weight: bold;
     }
-    .iconetelz:hover {
+    .iconepc:hover {
         color: #0065fc;
         background-color: #f2f2f2;
         font-weight: bold;
@@ -187,7 +186,7 @@
         align-items: center;       
     }
     
-    /*Hebergements et populaire*/
+    /*Hebergements et populaires*/
    
     p.afficher-plus{
         margin:13px 0;
@@ -198,7 +197,7 @@
     .grisclair{
         color: #d9d9d9;
     }
-    .conteneur {
+    .conteneur-hebergements {
         display: flex;
         align-items: flex-start;
         flex-direction: column-reverse; 
@@ -282,7 +281,7 @@
         cursor: pointer;
         transform: scale(1.05);
     }
-    .grille {
+    .grille-hebergements-pop {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -296,20 +295,19 @@
         float:right;
         margin-top: 5px;
     }
+
     /*Activites*/
-    .conteneura {
+
+    .conteneuractivites {
         display: flex;
         align-items: flex-start;
         flex-direction: column; 
-        padding: 0 20px;
-        
-        
+        padding: 0 20px;       
     }
     .activite1,.activite2,.activite3,.activite4,.activite5,.activite6  {
         -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);  
-    }
-        
+    }      
     .activite1:hover,.activite2:hover,.activite3:hover,.activite4:hover,.activite5:hover,.activite6:hover  {
         cursor: pointer;
         transform: scale(1.05);
@@ -317,13 +315,9 @@
         -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
         box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);    
     }
-    
-   
-    .grillez{
+    .grille-activites{
         display: flex;
-        flex-direction: column;
-        
-
+        flex-direction: column;      
     }
     .column{
         width: 100%;
@@ -360,7 +354,7 @@
         margin-top: 20px;
     }
      /* footer */
-     .Footer {
+     .footer {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -387,7 +381,7 @@
         text-decoration: none;
         padding-bottom: 5%;
     }
-    .Footer ul {
+    .footer ul {
         list-style-type: none;
         flex-wrap: wrap;
     }
@@ -443,14 +437,14 @@
         .populaire {
             width: 49%;
         }
-        .conteneura {
+        .conteneuractivites {
             flex-direction: row;
         }
 
         .activite {
             width: 49%; 
         }
-        .grillez{
+        .grille-activites{
         
         flex-direction: row ;
         justify-content: space-between;
@@ -480,7 +474,7 @@
     .activite6 img{
         height:150px;
     }
-    .Footer{
+    .footer{
         flex-direction: row;
         justify-content: start;  
     }
@@ -502,7 +496,7 @@
         .iconetel{
             display: none;
         }
-        .iconetelz {
+        .iconepc {
         height: 50px;
         width: 120px;
         color: #f2f2f2;
@@ -528,10 +522,10 @@
         .hebergement {
             width: 31%;
         }
-        .grille{
+        .grille-hebergements-pop{
             flex-wrap: wrap;
         }
-        .conteneur {
+        .conteneur-hebergements {
             flex-direction: row;
 
         }
@@ -542,13 +536,13 @@
             width: 23%;
             
         }
-        .grillez{
+        .grille-activites{
         
         flex-direction: row ;
         justify-content: space-between;
         
         }
-        .Footer{
+        .footer{
             flex-direction: row;
             justify-content: start;          
         }
