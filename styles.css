@@ -258,9 +258,9 @@ p.afficher-plus{
     flex-direction: column;
     justify-content: space-around;
 }  
-    .populaires figure{
-        display:flex;
-    }
+.populaires figure{
+    display:flex;
+}
 .populaire{
     width: 100%;
     background-color: white;
@@ -380,6 +380,7 @@ footer ul {
     list-style-type: none;
     flex-wrap: wrap;
 }
+
 @media screen and (min-width: 800px) {
     .page {
         width: 800px;
