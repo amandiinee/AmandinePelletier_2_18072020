@@ -7,7 +7,7 @@
     margin: 0;
     border: none;
     /* force le navigateur à inclure les paddings et borders dans la dimension des boîtes */
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
