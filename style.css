@@ -65,9 +65,11 @@ nav ul li a:hover {
     font-weight:bold;
 }
 .logo{ 
-    padding-top:25px;
+    padding-top:23px;
 }
-
+.logo a {
+    display:block;
+}
 /*Recherche*/
 .recherche {
     display: flex;
@@ -187,7 +189,7 @@ align-items: center;
 /*Hebergements et populaires*/
 
 p.afficher-plus{
-    margin:13px 0;
+    margin:36px 0 13px 0;
 }
 .bleu{
     color: #0065fc;
@@ -212,7 +214,7 @@ p.afficher-plus{
 }
 .hebergement{
     width: 100%;
-    height: 250px;
+    height: 210px;
     background-color: white;
     margin: 1vw 0;
     padding: 5px;        
@@ -227,7 +229,7 @@ p.afficher-plus{
 }
 .hebergement img{
     width: 100%;
-    height: 160px;
+    height: 115px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -241,7 +243,7 @@ p.afficher-plus{
 .populaire figcaption{
     display: flex;
     flex-direction:column;
-    padding: 15px 20px;
+    padding: 15px 0 15px 10px;
 }   
 .populaire figcaption div {
     margin-top: auto;
@@ -270,8 +272,8 @@ p.afficher-plus{
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);    
 }   
 .populaire img {
-    width: 40%;
-    height: 160px;
+    width: 127px;
+    height: 140px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -385,6 +387,9 @@ footer ul {
         margin: 0 auto;
         padding:0;
     }
+    .logo{ 
+        padding-top:48px;
+    }
     header {
         display: flex;
     }
@@ -481,6 +486,7 @@ footer ul {
     .page {
         width: 1200px;
     }
+   
     .filtres {
         flex-direction: row;
     }
