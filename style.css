@@ -17,15 +17,20 @@ body {
     padding-right: 2%;
 }
 h3 {
+    font-weight: bold;
     font-size: 1em;
+    
 }
 h2 {
     font-size:1.3em;
     margin: 15px 0 10px 0;
+    font-weight: bold;
 }
+
 h1 {
     margin-top: 40px;
     font-size: 1.4em;
+    font-weight: bold;
 }
 figcaption p{
     margin:13px 0;
@@ -381,9 +386,9 @@ footer ul {
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
     .page {
-        width: 800px;
+        width: 700px;
         margin: 0 auto;
         padding:0;
     }
